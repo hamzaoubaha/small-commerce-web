@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container1">
+        <div class="logo" >
+            <a href="#"><img src="Screenshot_2025-02-08_161404-removebg-preview.png" style="width: 60px;" alt="logo"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>  <a href="#">Acuille</a>  </li>
+                <li>  <a href="#">About</a>  </li>
+                <li>  <a href="#">foods</a>  </li>
+                <li>  <a href="#">Drinks</a>  </li>
+                <li>  <a href="#">Contact</a>  </li>
+            </ul>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="btn"><button type="button">S'inscrire</button></div>
+    </header>
+    
+    <section class="description">
+        <div class="container2">
+            <h3 class="title" > Delicious Bites </h3>
+            <p class="des-tit" >Enjoy the most delicious dishes prepared by professional chefs, with fresh ingredients and unforgettable flavors.</p>
+            <div class="buy"><button type="button">Eat Now</button></div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+    
+</body>
+</html>
